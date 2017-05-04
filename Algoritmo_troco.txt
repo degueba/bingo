@@ -1,0 +1,109 @@
+Algoritmo troco
+
+inicio
+
+	var produto, dinheiro, troco: Real
+	var n100,n50,n10,n5,n1: Real
+	var m50,m10,m5,m1: Real
+
+
+escreva("Entre com o valor do produto:")
+leia(produto)
+
+escreva("Entre com o valor do dinheiro: )
+leia(dinheiro)
+
+produto<- produto * 100
+dinheiro<- dinheiro * 100
+
+// Exemplo com produto 6000 e dinheiro 10000
+
+troco<- (dinheiro - produto)
+
+
+
+n100<- troco / 10000
+troco<- troco % 10000
+
+escreval("A quantidade de notas de R$100,00 é:")
+escreva(n100)
+leia(troco)
+
+
+n50 = troco / 5000
+troco<- troco % 5000
+
+escreval("A quantidade de notas de R$50,00 é:")
+escreva(n50)
+leia(troco)
+
+
+n10 = troco / 1000
+troco<- troco % 1000
+
+escreval("A quantidade de notas de R$10,00 é:")
+escreva(n10)
+leia(troco)
+
+
+n5 = troco / 500
+troco<- troco % 500
+
+escreval("A quantidade de notas de R$5,00 é:")
+escreva(n5)
+leia(troco)
+
+
+n1 = troco / 100
+troco<- troco % 100
+
+escreval("A quantidade de notas de R$1,00 é:")
+escreva(n1)
+leia(troco)
+
+
+
+
+m50<- troco / 50
+troco<- troco % 50
+
+escreval("A quantidade de moedas de R$0,50 é:")
+]escreva(m50)
+leia(troco)
+
+
+m10<- troco / 10
+troco<- troco % 10
+
+escreval("A quantidade de moedas de R$0,10 é:")
+escreva(m10)
+leia(troco)
+
+
+m5<- troco / 5
+troco<- troco % 5
+
+escreval("A quantidade de moedas de R$0,05 é: ")
+escreva(m5)
+leia(troco)
+
+
+m1<- troco
+
+escreval("A quantidade de moedas de R$0,01 é: ")
+escreva(m1)
+leia(troco)
+
+
+
+
+
+
+
+fim
+
+
+
+
+
+
